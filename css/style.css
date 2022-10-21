@@ -1,3 +1,43 @@
+/* FONTS */
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/Roboto-Bold.woff2') format('woff2'),
+      url('../fonts/Roboto-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/Roboto-Medium.woff2') format('woff2'),
+      url('../fonts/Roboto-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/Roboto-Regular.woff2') format('woff2'),
+      url('../fonts/Roboto-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* VARIABLES */
+
+:root {
+  --text-color:#000;
+  --bg-color-home:#F3D7B7;
+  --p-color:#333;
+  --green:#0A775F;
+  --collection-color:#F8F8F2;
+  --choose-color:#C99B67;
+
+}
+
 /* GLOBAL */
 
 html {
@@ -18,7 +58,7 @@ body {
   height: 100%;
   background-color: #fff;
   color: #222;
-  font-family: "Arial", sans-serif;
+  font-family: "Roboto", "Arial", sans-serif;
   font-size: 16px;
   line-height: 1.5;
   padding: 0;
@@ -30,6 +70,26 @@ img {
   height: auto;
 }
 
+
+/* BUTTON */
+
+.btn {
+  width: 100%;
+  max-width: 193px;
+  padding: 16px 24px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 1px;
+}
+
+/* GLOBAL CLASSES */
+
+.heading {
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 59px;
+}
 /* CONTAINER */
 
 .container {
