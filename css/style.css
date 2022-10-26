@@ -105,6 +105,9 @@ img {
   opacity: 0.6;
 }
 
+.btn-brown {
+  background-color: var(--choose-color);
+}
 /* GLOBAL CLASSES */
 
 .heading {
@@ -395,6 +398,90 @@ img {
   margin: 0;
 }
 
+
+/* HOW-IT-WORKS */
+
+.how-it-works__inner {
+  padding: 50px 30px;
+  text-align: center;
+  background-color: var(--green);
+  background-image: url(../img/works-bg.jpg);
+}
+
+.how-it-works-heading {
+  margin: 0;
+  margin-bottom: 80px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.how-it-works__list {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  margin-left: -20px;
+  margin-bottom: 60px;
+  list-style: none;
+  text-align: left;
+  counter-reset: how-it-works ;
+}
+
+.how-it-works__item {
+  display: flex;
+  flex-direction: column;
+  width: calc(100% / 3 - 20px);
+  margin-left: 20px;
+  counter-increment: how-it-works;
+}
+
+.how-it-works__item::before {
+  width: 60px;
+  height: 60px;
+  background-color: var(--collection-color);
+  border: 4px solid var(--choose-color);
+  margin-bottom: 20px;
+  content:" ";
+}
+
+.how-it-works__info {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 20px 40px;
+  background-color: var(--collection-color);
+}
+
+.how-it-works__info::before {
+  margin-bottom: 45px;
+  font-size: 64px;
+  line-height: 75px;
+  align-self: flex-end;
+  content: "0"counter(how-it-works);
+  color: var(--p-color);
+  opacity: 0.8;
+}
+
+.how-it-works__step-title {
+  width: 100%;
+  max-width: 231px;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 47px;
+  margin: 0;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.how-it-works__step-text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  margin: 0;
+}
+
+.how-it-works-cta:focus {
+  outline-color: var(--choose-color);
+}
 
 
 /* RETINA-BG */
