@@ -203,6 +203,11 @@ img {
   opacity: 0.6;
 }
 
+.sitenav-medium-font .sitenav-link {
+  font-size: 16px;
+  line-height: normal;
+}
+
 /* HERO */
 
 .hero-container {
@@ -401,6 +406,10 @@ img {
 
 /* HOW-IT-WORKS */
 
+.how-it-works {
+  margin-bottom: 50px;
+}
+
 .how-it-works__inner {
   padding: 50px 30px;
   text-align: center;
@@ -483,6 +492,61 @@ img {
   outline-color: var(--choose-color);
 }
 
+/* FOOTER */
+
+.footer {
+  padding-top: 65px;
+  padding-bottom: 65px;
+  background-color: var(--bg-color-home);
+  background-image: url(../img/site-header-intro-bg.jpg);
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.site-footer__logo-link {
+  display: flex;
+}
+
+.site-footer__logo-img {
+  width: 235px;
+  height: 24px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.site-footer__logo-link:hover {
+  opacity: 0.8;
+}
+
+.site-footer__logo-link:active {
+  opacity: 0.6;
+}
+
+/* SOCIALS */
+
+.socials {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.socials-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.socials-link {
+  display: flex;
+  color: #333;
+}
+
+.socials-link:hover {
+  color: var(--green);
+}
 
 /* RETINA-BG */
 
@@ -503,5 +567,14 @@ only screen and (min-resolution: 2dppx) {
 
   .features-inner {
     background-image: url(../img/features-bg@2x.jpg);
+  }
+
+  .how-it-works__inner {
+    background-image: url(../img/works-bg@2x.jpg);
+  }
+
+  .footer {
+    background-image: url(../img/site-header-intro-bg@2x.jpg);
+
   }
 }
